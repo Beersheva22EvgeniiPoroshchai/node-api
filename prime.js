@@ -3,7 +3,7 @@ import { log } from "node:console";
 import os from "node:os";
 const cpuCounter = os.cpus().length
 console.log(`number of cpu's is ${cpuCounter}`);
-cluster.schedulingPolicy = cluster.SCHED_RR; //round-robin algorithm for windowsOs
+cluster.schedulingPolicy = cluster.SCHED_RR; //round-robin algorithm for windowsOs, but it is not exactly
 cluster.setupPrimary({
     exec: 'index.js'
 })
