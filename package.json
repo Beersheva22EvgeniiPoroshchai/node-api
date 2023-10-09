@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mongodb": "^6.1.0"
-  }, 
+    "loadtest": "^8.0.3",
+    "mongodb": "^6.1.0",
+    "workerpool": "^6.5.0"
+  },
   "type": "module"
 }
