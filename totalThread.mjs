@@ -1,4 +1,4 @@
-import workerpool from 'workerpool';
+import workerpool from 'workerpool';   //npm i workerpool
 function totalThread(count) {
     const startTime = new Date();
     let total = 0;
@@ -6,8 +6,8 @@ function totalThread(count) {
     for (let i=1; i<=count; i++) {
         if(i % partition == 0) {
             const nPartition = i / partition;
-           // console.log(`${nPartition}. partition`);
-           workerpool.workerEmit({event: 'partition', data: `${nPartition}.partition`})
+            workerpool.workerEmit({event: 'partition',
+            data: `${nPartition}.partition`})
         }
         total++;
     }
